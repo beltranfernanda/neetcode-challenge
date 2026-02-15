@@ -2,11 +2,13 @@ from typing import List
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        # Define a set
-        # Create a for loop
-        # Ask if the set array has each number
-        # If true return true if not return false
-        # Time complexity is O(n) and space complexity is O(n)
+        """
+        1. Define a set
+        2. Create a for loop
+        3. Ask if the set array has each number
+        4. If true return true if not return false
+        5. Time complexity is O(n) and space complexity is O(n)
+        """
         seen = set()
         counter = 0
         for num in nums:
