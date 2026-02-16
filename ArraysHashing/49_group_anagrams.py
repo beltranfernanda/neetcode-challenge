@@ -68,7 +68,7 @@ def run_tests():
     ]
 
     for strs, expected in test_cases:
-        result = solution.groupAnagramsBruteForce(strs)
+        result = solution.groupAnagrams(strs)
         print(f"Input: {(strs)} | Expected: {expected} | Got: {result}")
         assert result == expected
 
