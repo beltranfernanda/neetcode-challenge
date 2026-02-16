@@ -1,3 +1,4 @@
+from collections import defaultdict
 from typing import List
 
 class Solution:
@@ -46,7 +47,17 @@ class Solution:
                 return False
 
         return True
-        
+    
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        # Dictionary to hold groups of anagrams
+        anagram_map = defaultdict(list)
+        for word in strs:
+            # Sort letters of the word to create a canonical key
+            sorted_key = "".join(sorted(word))
+            anagram_map[sorted_key].append(word)
+
+        # Return all grouped anagrams as a list of lists
+        return list(anagram_map.values())
 
 
 def run_tests():
