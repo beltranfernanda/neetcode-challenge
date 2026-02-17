@@ -1,6 +1,9 @@
 from typing import List
 
 class Solution:
+    """
+    Docstring for Solution
+    """
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         nums_map = dict()
         expected = 0
