@@ -48,6 +48,7 @@ class Solution:
 
         return True
     
+    # Optimal solution using a hash map to group anagrams by their sorted character key
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # Dictionary to hold groups of anagrams
         anagram_map = defaultdict(list)
